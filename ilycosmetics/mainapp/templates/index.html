@@ -1,0 +1,150 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILY Cosmetics</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <style>
+        body {
+            background-color: #ff99cc;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #993366;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4.4em;
+            margin: 0;
+            letter-spacing: 2.1px;
+            color: #ffffff;
+        }
+
+        .our-products {
+            font-family: 'Playfair Display', serif;
+            color: #000000;
+            text-align: left;
+            margin: 20px;
+            font-size: 2.7em;
+            letter-spacing: 2px;
+            align-self: flex-start;
+        }
+
+        .product-section {
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+        }
+
+        .product-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #d64161;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 200px;
+            margin-top: 10px;
+        }
+
+        .product-price {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+            color: #000000;
+            margin-top: 5px;
+        }
+
+        .bottom-margin {
+            margin-top: auto;
+            background-color: #ff6699;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: auto;
+        }
+
+        .online-message {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75em; 
+            color: #ffffff; 
+            text-align: right;
+            margin-top: 20px;
+            flex: 1 0 100%;
+        }
+
+        .online-message span {
+            color: rgb(226, 5, 42); 
+        }
+
+        .address {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3em;
+            color: rgb(121, 4, 4);
+            margin-top: 10px;
+            flex: 1 0 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ILY Cosmetics</h1>
+        <p>Where beauty meets care.</p>
+    </header>
+
+    <div class="our-products">Our Products : </div>
+
+    <div class="product-section">
+        <div class="product-title">ILY's Diva Sensational Mascara</div>
+        <img class="product-image" src="{% static 'img/mascara_image.png' %}" alt="Mascara Image">
+        <div class="product-price">279.99 TL</div>
+    </div>
+
+    <div class="product-section">
+        <div class="product-title">ILY's Enchanté Vixen Lipstick</div>
+        <img class="product-image" src="{% static 'img/lipstick_image.png' %}" alt="Lipstick Image">
+        <div class="product-price">169.99 TL</div>
+    </div>
+
+    <div class="product-section">
+        <div class="product-title">ILY's Dream Luxe Foundation</div>
+        <img class="product-image" src="{% static 'img/foundation_image.png' %}" alt="Foundation Image">
+        <div class="product-price">299.99 TL</div>
+    </div>
+
+    <div class="bottom-margin">
+        <div class="online-message">
+            Online shopping is <span>currently</span> unavailable due to recent launch, but products available on the website is in stock on our local shop. Feel free to visit us!
+        </div>
+        <div class="address">
+            272 New York Ave, Brooklyn, NY 11216
+        </div>
+    </div>
+
+</body>
+
+</html>
